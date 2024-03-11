@@ -1,0 +1,57 @@
+/* CSS untuk membuat gambar dan tampilan lebih menarik */
+
+.container {
+    max-width: 900px;   /*membatasi lebar max*/
+    margin: 0 auto;     /*berikan jarak luar */
+    padding: 20px;      /*ruang*/
+    background-color: rgb(166, 145, 134); /* Warna latar belakang ungu */
+}
+
+.card {
+    position: relative;     /*mengatur properti posisi elemen yang ada di kelas card*/
+}
+
+.card img {         /*mengatur ketentuan dari gambar yang dipilih*/
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover img {       /*edit untuk memperbesar gambar*/
+    transform: scale(1.1);
+}
+
+.text {                     /*untuk mengatur teks yang ada didalam kotak*/
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(225, 230, 242, 0.875);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.card:hover .text {         /*warna yang digunakan ketika memperbesar gambar*/
+    background-color: rgba(235, 201, 181, 0.91);
+}
+
+.text h2 {      /*ketentuan dari text*/
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.text p {
+    color: #666;
+    line-height: 1.6;
+}
+
+h1 {            
+    color: rgb(45, 74, 22);
+    margin-top: 0;
+    font-size: 36px;
+}
